@@ -74,7 +74,7 @@ def main():
         start = event['start'].get('dateTime', event['start'].get('date'))[11:16]
         end = event['end'].get('dateTime', event['end'].get('date'))[11:16]
 
-        print(start+'-'+end+','+event['summary'])
+        print('%s-%s        %s' %(start,end,event['summary']))
 
 if __name__ == '__main__':
     main()
